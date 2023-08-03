@@ -1,11 +1,6 @@
-import argparse
-import os
-import requests
-import json
-import sys
+import json, sys, requests, os, argparse, subprocess
 from bs4 import BeautifulSoup
 from urllib.parse import urlparse
-import subprocess
 
 def grabfulldata(videourl):
     headers = {"User-Agent":"Mozilla/5.0 (iPhone; CPU OS 10_15_5 (Ergänzendes Update) like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1.1 Mobile/14E304 Safari/605.1.15"}
